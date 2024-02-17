@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button button1;
-    private int mCount;
+
 
 
     @Override
@@ -24,11 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void countUp(View view){
-        ++mCount;
-        if(button1!=null)
-            button1.setText(Integer.toString(mCount));
-    }
+  
     public void nextScreen(View view ){
         Intent intent =new Intent(MainActivity.this,Activity2.class);
         startActivity(intent);
